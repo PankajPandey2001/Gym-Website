@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gym website</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <style>
+        body {
+            background-image: url(assets/gym.jpg);
+            background-repeat: no-repeat;
+            /* background-size: 100% 1600% ; */
+
+            height: 100% ;
+            width: 100vw;
+
+            background-position: top right;
+        }
+
+        .icon {
+
+            display: inline-block;
+            margin-left: 70px;
+            /* margin-top: 30px; */
+            color: white;
+
+        }
+
+        .menu {
+            display: inline-block;
+            margin: 0;
+            padding: 0;
+        }
+
+        .list {
+            display: inline;
+            list-style: none;
+            margin-left: 300px;
+
+        }
+
+        li {
+            display: inline;
+            margin-left: 20px;
+            margin-right: 20px;
+            font-size: 20px;
+        }
+
+        li a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+
+        .button {
+            margin-left: 170px;
+            display: inline;
+
+
+        }
+
+        .btn {
+            border-color: white;
+            border-width: 0.5px;
+            background-color: black;
+            color: white;
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 15px;
+
+            text-decoration: none;
+        }
+
+        form {
+
+            display: inline-block;
+            color: white;
+            border: 2px white solid;
+            border-radius: 30px;
+            height: 300px;
+            padding: 120px;
+            padding-top: 30px;
+
+            margin-top: 150px;
+            margin-left: 100px;
+
+            font-weight: bold;
+
+        }
+
+        input {
+            margin: 3px;
+            border-radius: 5px;
+            width: 300px;
+            height: 30px;
+
+            text-align: center;
+        }
+
+        #submit {
+            /* background-color: black; */
+            /* color: white; */
+            cursor: pointer;
+
+
+        }
+
+        #heading {
+            font-weight: bold;
+            font-size: 25px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="icon">
+            <i id="iconicon" class="fa-solid fa-dumbbell fa-3x"></i>
+            <div class="icontext"> Pankaj Fitness </div>
+        </div>
+
+        <div class="menu">
+            <ul class="list">
+                <li> <a href="#">Home</a> </li>
+                <li> <a href="#">Aboutus</a></li>
+                <li> <a href="#"> Fitness Calculator</a></li>
+                <li> <a href="#">Contact us</a></li>
+
+            </ul>
+
+            <div class="button">
+                <button class="btn">
+                    Email Us
+                </button>
+                <button class="btn">
+                    Call Us Now
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <form id="form" action="backend.php">
+
+        <p id="heading"> Join The Best Gym Of Delhi Now </p>
+
+        <div>
+            <input type="text" placeholder="Enter your name">
+        </div>
+
+        <div>
+            <input type="number" placeholder="Enter your Age">
+        </div>
+
+        <div>
+
+            <input type="text" placeholder="Enter your Gender">
+        </div>
+
+        <div>
+
+            <input type="email" placeholder="Enter your Email id">
+        </div>
+
+        <div>
+
+            <input type="text" placeholder="Enter your Phone no ">
+        </div>
+
+        <div id="submit">
+
+            <input type="submit" value="Submit">
+
+            <!-- ee -->
+        </div>
+
+    </form>
+
+</body>
+
+</html>
